@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+  <div class="container">
+    <form>
+      <h1> User Details </h1>
+      <div>
+        <p> First Name</p>
+        <input type="text"  value="<%=user.firstName%>" disabled />
+      </div>
+      <div>
+        <p>Last Name</p>
+        <input type="text"  value="<%=user.lastName%>" disabled />
+      </div>
+      <div>
+        <p>Email</p>
+        <input type="email" value="<%=user.email%>" disabled />
+      </div>
+      <div>
+        <p>Headline</p>
+        <textarea disabled><%=user.headline%></textarea>
+      </div>
+    </form>
+  </div>
+
+  </body>
+</html>
