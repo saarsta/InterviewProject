@@ -10,7 +10,6 @@ $(function () {
         console.log(data);
 
         $.post('/users', data).done(function (user) {
-            debugger
             //if user doesnt exist create it, then rediret
             window.location = "/users/" + user._id;
         });
